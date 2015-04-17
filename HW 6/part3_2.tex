@@ -1,0 +1,6 @@
+\begin{tikzpicture}[scale=2]
+	\draw[->] (-2,0)--(2,0) node[anchor=north] {$x$};
+	\draw[->] (0,-2)--(0,2) node[anchor=east] {$y$};
+	\draw node[anchor=north east] {$0$};
+	\draw plot[smooth] coordinates { (1,2) (2,-2) (-2.1,-2) (-2.5, 2) (2,2) };
+\end{tikzpicture}
