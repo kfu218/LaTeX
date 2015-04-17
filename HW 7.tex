@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\newcommand{\qeq}[1]{${#1}=0$}
+\begin{document}
+	Три сантиметра над землей
+	$\alpha$
+	\qeq{x^2+4x-6}
+	
+	\begin{large}
+		\newcommand{\qz}[1]{\bf{Решите уравнение} \qeq{#1}.}
+		\renewcommand{\alpha}{\bf{(Би-2)}}
+		\qz{x^3+5x+2}
+		
+		Скольские улицы \alpha
+		% Можно ли переопределить команду в контексте? - Да можно.
+	\end{large}
+	%новая команда qz уже не доступна
+\end{document}
